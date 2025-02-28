@@ -32,5 +32,24 @@ namespace Play.Catalog.Service.Repositories
             return await dbCollection.Find(filter).FirstOrDefaultAsync();
         }
 
+        public async Task CreateAsync(Item item)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+            await dbCollection.InsertOneAsync(item);
+        }
+
+        public async void UpdateAsync(Item item)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+            var filter = filterBuilder.Eq(existingItem => existingItem.Id, item.Id);
+            await dbCollection.ReplaceOneAsync(filter, item);
+        }
+
     }
 }
