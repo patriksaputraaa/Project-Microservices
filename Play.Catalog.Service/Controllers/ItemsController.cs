@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Play.Catalog.Service.Dtos;
+using Play.Catalog.Service.Repositories;
 
 namespace Play.Catalog.Service.Controllers
 {
@@ -13,6 +14,8 @@ namespace Play.Catalog.Service.Controllers
     [Route("api/[controller]")]
     public class ItemsController : Controller
     {
+        private readonly ItemRepository itemRepository = new();
+
         private static readonly List<ItemDto> items = new()
         {
             new ItemDto(Guid.NewGuid(), "Potion", "Heals 20 HP", 20, DateTimeOffset.UtcNow),
@@ -21,8 +24,9 @@ namespace Play.Catalog.Service.Controllers
         };
 
         [HttpGet]
-        public IEnumerable<ItemDto> GetItems()
+        public async Task<IEnumerable<ItemDto>> GetAsync(int id)
         {
+            var items = await (itemRepository.GetAllAsync()).Select(itemRepository, x => x.ItemDto);
             return items;
         }
 
@@ -38,7 +42,7 @@ namespace Play.Catalog.Service.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+        public async Task<ActionResult<ItemDto>> CreateItem(CreateItemDto itemDto)
         {
             var item = new ItemDto(Guid.NewGuid(), itemDto.Name, itemDto.Description, itemDto.Price, DateTimeOffset.UtcNow);
             items.Add(item);
