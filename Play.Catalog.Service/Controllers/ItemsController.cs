@@ -5,28 +5,36 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Play.Catalog.Service.Dtos;
 
 namespace Play.Catalog.Service.Controllers
 {
-    [Route("[controller]")]
+    [ApiController]
+    [Route("api/[controller]")]
     public class ItemsController : Controller
     {
-        private readonly ILogger<ItemsController> _logger;
-
-        public ItemsController(ILogger<ItemsController> logger)
+        private static readonly List<ItemDto> items = new()
         {
-            _logger = logger;
+            new ItemDto(Guid.NewGuid(), "Potion", "Heals 20 HP", 20, DateTimeOffset.UtcNow),
+            new ItemDto(Guid.NewGuid(), "Iron Sword", "Deals 20 Damage", 20, DateTimeOffset.UtcNow),
+            new ItemDto(Guid.NewGuid(), "Bronze Shield", "Deals 10 Damage", 10, DateTimeOffset.UtcNow)
+        };
+
+        [HttpGet]
+        public IEnumerable<ItemDto> GetItems()
+        {
+            return items;
         }
 
-        public IActionResult Index()
+        [HttpGet("{id}")]
+        public ActionResult<ItemDto> GetItem(Guid id)
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
+            var item = items.Where(item => item.Id == id).SingleOrDefault();
+            if (item is null)
+            {
+                return NotFound();
+            }
+            return Ok(item);
         }
     }
 }
