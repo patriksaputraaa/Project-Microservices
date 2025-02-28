@@ -36,5 +36,13 @@ namespace Play.Catalog.Service.Controllers
             }
             return Ok(item);
         }
+
+        [HttpPost]
+        public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+        {
+            var item = new ItemDto(Guid.NewGuid(), itemDto.Name, itemDto.Description, itemDto.Price, DateTimeOffset.UtcNow);
+            items.Add(item);
+            return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item);
+        }
     }
 }
