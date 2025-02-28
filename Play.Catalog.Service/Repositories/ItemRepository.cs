@@ -26,5 +26,11 @@ namespace Play.Catalog.Service.Repositories
             return await dbCollection.Find(filterBuilder.Empty).ToListAsync();
         }
 
+        public async Task<Item> GetByIdAsync(Guid id)
+        {
+            var filter = filterBuilder.Eq(item => item.Id, id);
+            return await dbCollection.Find(filter).FirstOrDefaultAsync();
+        }
+
     }
 }
