@@ -51,5 +51,11 @@ namespace Play.Catalog.Service.Repositories
             await dbCollection.ReplaceOneAsync(filter, item);
         }
 
+        public async Task DeleteAsync(Guid id)
+        {
+            var filter = filterBuilder.Eq(item => item.Id, id);
+            await dbCollection.DeleteOneAsync(filter);
+        }
+
     }
 }
