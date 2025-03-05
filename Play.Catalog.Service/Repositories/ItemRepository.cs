@@ -40,7 +40,7 @@ namespace Play.Catalog.Service.Repositories
             await dbCollection.InsertOneAsync(item);
         }
 
-        public async void UpdateAsync(Item item)
+        public async Task UpdateAsync(Item item)
         {
             if (item == null)
             {

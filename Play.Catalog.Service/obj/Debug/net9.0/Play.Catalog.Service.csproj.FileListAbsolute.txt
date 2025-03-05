@@ -35,3 +35,9 @@ D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckl
 D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\GitHub\Microservices\Project\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.sourcelink.json
+D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\DnsClient.dll
+D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\MongoDB.Bson.dll
+D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\MongoDB.Driver.dll
+D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\SharpCompress.dll
+D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\Snappier.dll
+D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\ZstdSharp.dll
