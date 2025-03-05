@@ -24,21 +24,21 @@ namespace Play.Catalog.Service.Controllers
         };
 
         [HttpGet]
-        public async Task<IEnumerable<ItemDto>> GetAsync(int id)
+        public async Task<IEnumerable<ItemDto>> GetAsync()
         {
-            var items = await (itemRepository.GetAllAsync()).Select(itemRepository, x => x.ItemDto);
+            var items = (await itemRepository.GetAllAsync()).Select(item => item.AsDto());
             return items;
         }
 
         [HttpGet("{id}")]
-        public ActionResult<ItemDto> GetItem(Guid id)
+        public async Task<ActionResult<ItemDto>> GetItem(Guid id)
         {
-            var item = items.Where(item => item.Id == id).SingleOrDefault();
+            var item = await itemRepository.GetByIdAsync(id);
             if (item is null)
             {
                 return NotFound();
             }
-            return Ok(item);
+            return item.AsDto();
         }
 
         [HttpPost]
