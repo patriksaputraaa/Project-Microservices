@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace Play.Catalog.Service.Repositories
 {
-    public class ItemRepository : IItemRepository
+    public class ItemRepository : IRepository
     {
         private const string collectionName = "items";
         private readonly IMongoCollection<Item> dbCollection;
