@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace Play.Catalog.Service.Repositories
 {
-    public class ItemRepository
+    public class ItemRepository : IItemRepository
     {
         private const string collectionName = "items";
         private readonly IMongoCollection<Item> dbCollection;
@@ -55,6 +55,5 @@ namespace Play.Catalog.Service.Repositories
             var filter = filterBuilder.Eq(item => item.Id, id);
             await dbCollection.DeleteOneAsync(filter);
         }
-
     }
 }

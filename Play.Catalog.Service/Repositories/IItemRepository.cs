@@ -8,10 +8,10 @@ namespace Play.Catalog.Service.Repositories
 {
     public interface IItemRepository
     {
-        Task CreateAync(Item entity);
+        Task CreateAsync(Item entity);
         Task<IReadOnlyCollection<Item>> GetAllAsync();
-        Task<Item> GetAsync(Guid id);
-        Task RemoveAsync(Guid id);
+        Task<Item> GetByIdAsync(Guid id);
+        Task DeleteAsync(Guid id);
         Task UpdateAsync(Item entity);
 
     }
