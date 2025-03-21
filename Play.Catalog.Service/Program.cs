@@ -15,13 +15,6 @@ builder.Services.AddControllers(
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
-var serviceSettings= builder.Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
-builder.Services.AddSingleton(ServiceProvider => {
-    var mongoDbSettings = builder.Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
-    var mongoClient = new MongoClient(mongoDbSettings.ConnectionString);
-    return mongoClient.GetDatabase(serviceSettings.ServiceName);
-});
-
 builder.Services.AddSingleton<IRepository<Item>>(ServiceProvider =>
 {
     var database = ServiceProvider.GetRequiredService<IMongoDatabase>();
