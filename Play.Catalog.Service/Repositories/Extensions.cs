@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MongoDB.Driver;
+using Play.Catalog.Service.Entities;
 using Play.Catalog.Service.Settings;
 
 namespace Play.Catalog.Service.Repositories
@@ -16,8 +17,19 @@ namespace Play.Catalog.Service.Repositories
                 var configuration = ServiceProvider.GetRequiredService<IConfiguration>();
                 var serviceSettings = configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
                 var mongoDbSettings = configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
-                var mongoClient = new MongoClient(serviceSettings, mongoDbSettings,);
+                var mongoClient = new MongoClient(mongoDbSettings.ConnectionString);
                 return mongoClient.GetDatabase(serviceSettings.ServiceName);
+            });
+            return services;
+        }
+
+        public static IServiceCollection AddMongoRepository<T>(this IServiceCollection services, string collectionName) 
+        where T : IEntity
+        {
+            services.AddSingleton<IRepository<T>>(ServiceProvider =>
+            {
+                var database = ServiceProvider.GetRequiredService<IMongoDatabase>();
+                return new MongoRepository<T>(database, collectionName);
             });
             return services;
         }
