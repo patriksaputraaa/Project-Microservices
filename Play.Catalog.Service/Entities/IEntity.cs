@@ -9,8 +9,6 @@ namespace Play.Catalog.Service.Entities
 {
     public interface IEntity
     {
-        [BsonId]
-        [BsonGuidRepresentation(GuidRepresentation.Standard)]
-        public Guid Id { get; set; }
+        public Guid Id { get; init; }
     }
 }

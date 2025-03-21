@@ -12,7 +12,7 @@ namespace Play.Catalog.Service.Entities
     {
         [BsonId]
         [BsonGuidRepresentation(GuidRepresentation.Standard)]
-        public Guid Id { get; set; }
+        public Guid Id { get; init; }
         [Required]
         public string Name { get; set; }
         [Required]

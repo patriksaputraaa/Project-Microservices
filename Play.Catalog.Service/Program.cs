@@ -2,6 +2,7 @@ using Play.Catalog.Service;
 using MongoDB.Driver;
 using Play.Catalog.Service.Settings;
 using Play.Catalog.Service.Repositories;
+using Play.Catalog.Service.Entities;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,7 +22,11 @@ builder.Services.AddSingleton(ServiceProvider => {
     return mongoClient.GetDatabase(serviceSettings.ServiceName);
 });
 
-builder.Services.AddSingleton<IItemRepository, ItemRepository>();
+builder.Services.AddSingleton<IRepository<Item>>(ServiceProvider =>
+{
+    var database = ServiceProvider.GetRequiredService<IMongoDatabase>();
+    return new MongoRepository<Item>(database, "items");
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
