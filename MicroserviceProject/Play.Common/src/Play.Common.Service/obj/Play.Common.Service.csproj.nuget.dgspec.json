@@ -51,15 +51,15 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsof.Extension.DependencyInjection": {
-              "target": "Package",
-              "version": "[9.0.3, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[9.0.3, )"
             },
             "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.3, )"
             },

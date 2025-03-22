@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "L5x92qf/Deo=",
-  "success": false,
+  "dgSpecHash": "ohfFP0k16Qk=",
+  "success": true,
   "projectFilePath": "D:\\GitHub\\Microservices\\Project\\MicroserviceProject\\Play.Common\\src\\Play.Common.Service\\Play.Common.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp394\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\hp394\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.3\\microsoft.extensions.configuration.9.0.3.nupkg.sha512",
     "C:\\Users\\hp394\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\hp394\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.3\\microsoft.extensions.configuration.binder.9.0.3.nupkg.sha512",
+    "C:\\Users\\hp394\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
+    "C:\\Users\\hp394\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\hp394\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\hp394\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.3\\microsoft.extensions.primitives.9.0.3.nupkg.sha512",
     "C:\\Users\\hp394\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
@@ -23,15 +25,5 @@
     "C:\\Users\\hp394\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\hp394\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package Microsof.Extension.DependencyInjection. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
-      "libraryId": "Microsof.Extension.DependencyInjection",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }
