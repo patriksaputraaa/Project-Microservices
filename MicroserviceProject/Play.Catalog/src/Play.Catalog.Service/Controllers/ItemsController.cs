@@ -1,19 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Play.Catalog.Service.Dtos;
 using Play.Catalog.Service.Entities;
-using Play.Catalog.Service.Repositories;
 
 namespace Play.Catalog.Service.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ItemsController : Controller
+    public class ItemsController : ControllerBase
     {
         private readonly IRepository<Item> itemRepository;
 

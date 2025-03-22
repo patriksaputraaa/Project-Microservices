@@ -1,7 +1,5 @@
 using Play.Catalog.Service;
 using MongoDB.Driver;
-using Play.Catalog.Service.Settings;
-using Play.Catalog.Service.Repositories;
 using Play.Catalog.Service.Entities;
 var builder = WebApplication.CreateBuilder(args);
 

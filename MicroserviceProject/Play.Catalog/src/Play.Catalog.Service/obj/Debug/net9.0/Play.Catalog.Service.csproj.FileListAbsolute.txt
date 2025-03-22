@@ -41,3 +41,14 @@ D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\MongoDB.Dr
 D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\SharpCompress.dll
 D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\Snappier.dll
 D:\GitHub\Microservices\Project\Play.Catalog.Service\bin\Debug\net9.0\ZstdSharp.dll
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.csproj.AssemblyReference.cache
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.AssemblyInfoInputs.cache
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.AssemblyInfo.cs
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.csproj.CoreCompileInputs.cache
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.MvcApplicationPartsAssemblyInfo.cs
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.MvcApplicationPartsAssemblyInfo.cache
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.sourcelink.json
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.dll
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\refint\Play.Catalog.Service.dll
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.pdb
