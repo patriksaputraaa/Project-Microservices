@@ -1,0 +1,13 @@
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\bin\Release\net9.0\Play.Common.Service.deps.json
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\bin\Release\net9.0\Play.Common.Service.dll
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\bin\Release\net9.0\Play.Common.Service.pdb
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.csproj.AssemblyReference.cache
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.AssemblyInfoInputs.cache
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.AssemblyInfo.cs
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.csproj.CoreCompileInputs.cache
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.sourcelink.json
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.dll
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\refint\Play.Common.Service.dll
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\Play.Common.Service.pdb
+D:\GitHub\Microservices\Project\MicroserviceProject\Play.Common\src\Play.Common.Service\obj\Release\net9.0\ref\Play.Common.Service.dll

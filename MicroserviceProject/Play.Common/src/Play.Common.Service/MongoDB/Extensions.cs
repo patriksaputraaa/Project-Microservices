@@ -1,4 +1,7 @@
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
+using Play.Common.Service.Settings;
 
 namespace Play.Common.Service.MongoDB
 {
@@ -8,7 +11,7 @@ namespace Play.Common.Service.MongoDB
         {
             services.AddSingleton(serviceProvider => 
             {
-                var configuration = ServiceProvider.GetRequiredService<IConfiguration>();
+                var configuration = serviceProvider.GetRequiredService<IConfiguration>();
                 var serviceSettings = configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
                 var mongoDbSettings = configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
                 var mongoClient = new MongoClient(mongoDbSettings.ConnectionString);
