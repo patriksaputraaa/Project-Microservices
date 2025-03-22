@@ -1,6 +1,5 @@
-using Play.Catalog.Service;
-using MongoDB.Driver;
 using Play.Catalog.Service.Entities;
+using Play.Common.MongoDB;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

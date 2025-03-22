@@ -6537,7 +6537,7 @@
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.2",
       "MongoDB.Driver >= 3.2.1",
-      "Play.Common >= 1.0.0",
+      "Play.Common >= 1.0.2",
       "Swashbuckle.AspNetCore >= 7.3.0"
     ]
   },
@@ -6603,7 +6603,7 @@
           },
           "Play.Common": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[1.0.2, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -6632,17 +6632,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Play.Catalog.Service depends on Play.Common (>= 1.0.0) but Play.Common 1.0.0 was not found. Play.Common 1.0.2 was resolved instead.",
-      "libraryId": "Play.Common",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }
