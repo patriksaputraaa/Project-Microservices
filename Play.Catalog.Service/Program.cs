@@ -15,11 +15,8 @@ builder.Services.AddControllers(
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IRepository<Item>>(ServiceProvider =>
-{
-    var database = ServiceProvider.GetRequiredService<IMongoDatabase>();
-    return new MongoRepository<Item>(database, "items");
-});
+builder.Services.AddMongo().AddMongoRepository<Item>("items");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
