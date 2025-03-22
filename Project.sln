@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroserviceProject", "MicroserviceProject", "{05AD576A-EAC5-1632-7557-F849C95FF5FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Catalog", "Play.Catalog", "{3F1ED511-4787-A28D-2443-F6407FCAF007}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0B52A457-6538-7813-B3F1-ADB0FA2AE217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Catalog.Service", "MicroserviceProject\Play.Catalog\src\Play.Catalog.Service\Play.Catalog.Service.csproj", "{320265B1-F1BC-9501-C8E3-A6CE5C060995}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Common", "Play.Common", "{7C09E7FA-1975-8DAB-8602-8A61AFD518BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D983DD3A-5C48-5017-8EE8-F1C305CCBABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Common.Service", "MicroserviceProject\Play.Common\src\Play.Common.Service\Play.Common.Service.csproj", "{7AEFDB37-1D6B-C52B-9BC7-678ACDA508E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{320265B1-F1BC-9501-C8E3-A6CE5C060995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320265B1-F1BC-9501-C8E3-A6CE5C060995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320265B1-F1BC-9501-C8E3-A6CE5C060995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320265B1-F1BC-9501-C8E3-A6CE5C060995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AEFDB37-1D6B-C52B-9BC7-678ACDA508E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AEFDB37-1D6B-C52B-9BC7-678ACDA508E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AEFDB37-1D6B-C52B-9BC7-678ACDA508E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AEFDB37-1D6B-C52B-9BC7-678ACDA508E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F1ED511-4787-A28D-2443-F6407FCAF007} = {05AD576A-EAC5-1632-7557-F849C95FF5FF}
+		{0B52A457-6538-7813-B3F1-ADB0FA2AE217} = {3F1ED511-4787-A28D-2443-F6407FCAF007}
+		{320265B1-F1BC-9501-C8E3-A6CE5C060995} = {0B52A457-6538-7813-B3F1-ADB0FA2AE217}
+		{7C09E7FA-1975-8DAB-8602-8A61AFD518BD} = {05AD576A-EAC5-1632-7557-F849C95FF5FF}
+		{D983DD3A-5C48-5017-8EE8-F1C305CCBABA} = {7C09E7FA-1975-8DAB-8602-8A61AFD518BD}
+		{7AEFDB37-1D6B-C52B-9BC7-678ACDA508E7} = {D983DD3A-5C48-5017-8EE8-F1C305CCBABA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9766DBCB-3D12-4971-A42C-10429E8DBA68}
+	EndGlobalSection
+EndGlobal

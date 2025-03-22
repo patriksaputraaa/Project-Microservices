@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace Play.Catalog.Service.Entities
+namespace Play.Common.Service
 {
     public interface IEntity
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Play.Catalog.Service.Settings
+namespace Play.Common.Service.Settings
 {
     public class MongoDbSettings
     {
