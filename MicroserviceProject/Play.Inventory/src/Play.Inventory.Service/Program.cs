@@ -16,7 +16,7 @@ builder.Services.AddControllers(
 builder.Services.AddOpenApi();
 builder.Services.AddMongo().AddMongoRepository<InventoryItem>("inventoryItems");
 builder.Services.AddHttpClient<CatalogClient>(client => {
-    client.BaseAddress = new Uri("https://localhost:7115",)
+    client.BaseAddress = new Uri("https://localhost:7115");
 });
 
 var app = builder.Build();
